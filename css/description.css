@@ -1,0 +1,88 @@
+header {
+    position: fixed;
+
+}
+
+
+.banner_main img{
+    width: 100vw;
+
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 10px 10px 50px;
+}
+
+.stars {
+    margin: 10px 10px 10px 50px;
+
+}
+
+.description_movie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.movie_p {
+    margin: 5px 90px 5px 50px;
+    font-weight: bold;
+}
+
+.productors {
+    margin: 20px 90px 5px 50px;
+    display:  grid;
+    grid-template-columns: 30vw 30vw 1fr;
+
+    grid-template-areas: 
+    "director autor";
+
+}
+
+
+h4 {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p a {
+ text-decoration: none;
+ font-weight: bold;
+ color: rgba(0, 133, 255, 0.75);
+}
+
+.card_title_trailer h2{
+    margin: 30px 90px 30px 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+
+
+.movie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+
+
+@media(max-width:960px) {
+
+    .movie iframe {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+
+}

@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@700&family=Montserrat:wght@100&family=Notable&display=swap');
+
+*{ 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+    --cor-fundo: #E5E5E5;
+    --cor-principal:#141414;
+    --cor-clara: #fff;
+    --cor-destaque: #dd1818;
+    --largura-max:100%;
+}
+
+html{
+    width: var(--largura-max);
+    font-size: 15px;
+    scroll-behavior: smooth;
+
+}
+ 
+html:target {
+  scroll-margin-top: .8em;
+}
+
+body{
+    background: var(--cor-fundo);
+}
+
+header{
+    width: var(--largura-max);
+    height:10vh;
+    background-color: var(--cor-principal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.logo{
+    font-size: 3rem;
+    font-weight: bolder;
+    color:var(--cor-destaque);
+    letter-spacing: 2px;
+}
+
+nav ul{
+    display: flex;
+    cursor: pointer;
+    color: var(--cor-clara);
+    gap: 20px;
+}
+
+nav li{
+    list-style-type:none;
+}
+
+nav a , #description{
+    text-decoration: none;
+    color: var(--cor-clara);
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+}
+
+nav a:hover{
+    font-weight: bolder;
+}
+
+span{
+    color: #dd1818;
+    font-weight: bolder;
+}
+
+#containerBanner{
+    background-image: url(../imagens/banner_principal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: var(--largura-max);
+    height: 100vh;
+
+}
+
+.card__banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 30px;
+    
+}
+
+.título__banner{
+    color: var(--cor-destaque);
+    font-size: 4.5rem;
+    padding-right: 45vh;
+    animation-name: rotate;
+    animation-duration: 0.9s;
+    animation-delay: 1s;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+    
+.texto__banner{
+    color: var(--cor-clara);
+    padding-bottom: 25px;
+    font-size: 1.3rem;
+    max-width: 1440px;
+    min-width: 300px;
+}
+
+.btn__banner{
+    background-image: linear-gradient(to right, #dd1818 0%, #333  51%, #dd1818  100%)
+}
+.btn__banner {
+    width: 350px;
+    height: 50px;
+    margin: 10px;
+    padding: auto;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    font-size: 2rem;            
+    box-shadow: 0 0 20px #333;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn__banner:hover {
+    background-position: right center;   
+    text-decoration: none;
+}    
+.films {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.films h2{
+    margin: 20px;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+
+}
+
+.containerItens{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 5vw;
+    padding-right: 5vw;
+ 
+    
+}
+
+.card{
+    width: 25vw;    
+    border-radius: 3%;
+    background-color: var(--cor-fundo);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.425);
+    transition: .5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 30px;
+    margin: 20px;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.img__itens{
+    width: 100%;
+    height: 20vw;
+    
+    border-radius: 3%;
+}
+
+h3{
+    margin:10px;
+    font-size: 1.2rem;
+        
+}
+
+.card p{
+    font-size: 0.9rem;
+    text-align: justify;
+    padding: 10px;
+    color: #141414;
+    font-weight: bold;
+    height: 17vw;
+    line-height: 150%;
+}
+
+.btn__card{
+    background-image: linear-gradient(to right, #dd1818 0%, #333  51%, #dd1818  100%)
+}
+.btn__card a{
+    text-decoration: none;
+    color: var(--cor-clara);
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+
+
+}
+
+.btn__card {
+    width: 80%;
+    height: 7vh;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    font-size: 1.5rem;            
+    border-radius: 10px;
+    display: block;
+    border: none;
+}
+
+.btn__card:hover {
+    background-position: right center;   
+    text-decoration: none;
+}
+
+footer{
+    width: var(--largura-max);
+    height: 40vh;
+    background-color: var(--cor-principal);
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-around;
+   
+}
+.footer_devs{
+    display: flex;
+    justify-content: space-around;
+    width: var(--largura-max);
+    color:var(--cor-clara);
+}
+.footer__cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+.footer_info p{
+    color: var(--cor-clara);
+    text-align: center; 
+
+}
+
+@media (max-width:1280px){
+    html{
+        font-size: 12px;
+    }
+    .btn__banner {
+        width: 200px;
+        ;
+    }
+    .card{
+        width: 24vw;   
+    }
+    .card p{
+        height: 18vw;
+    }
+    footer{
+        height: 30vh;
+    }
+      
+
+
+@media (max-width:1024px){
+    html{
+        font-size: 11px;
+    }
+    .btn__banner {
+        width: 170px;
+       ;
+    }
+    .card{
+        width: 35vw;   
+    }
+    .card p{
+        height: 12vw;
+    }
+    footer{
+        height: 20vh;
+    }
+
+
+
+}
+
+@media(max-width:900px){
+    html{
+        font-size: 10px;
+    }
+    .btn__banner {
+        width: 170px;
+        ;
+    }
+    .card{
+        width: 35vw;   
+    }
+    .card p{
+        height: 12vw;
+    }
+    footer{
+        height: 20vh;
+    }
+
+
+
+}
+
+@media(max-width:780px){
+    html{
+        font-size: 10px;
+    }
+    .btn__banner {
+        width: 170px;
+        ;
+    }
+    .card{
+        width: 70vw;   
+    }
+    .card p{
+        height: 20vw;
+    }
+    footer{
+        height: 20vh;
+    }
+
+    .img__itens{
+        width: 100%;
+        height: 40vw;
+    }
+
+@media(max-width:550px){
+    html{
+        font-size: 9px;        }
+        .btn__banner {
+            width: 170px;
+            ;
+        }
+        .card{
+            width: 70vw;   
+        }
+        .card p{
+            height: 20vw;
+        }
+        footer{
+            height: 20vh;
+        }
+    
+        .img__itens{
+            width: 100%;
+            height: 40vw;
+        }
+
+        .título__banner{
+            color: var(--cor-destaque);
+            font-size: 4.5rem;
+            padding-right: 5vh;
+        }
